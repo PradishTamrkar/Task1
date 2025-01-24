@@ -11,7 +11,6 @@ Vagrant.configure("2") do |config|
     end
 
     wp.vm.provision "shell", inline: <<-SHELL
-      echo "Running wordpress-installation.sh"
       bash /vagrant-data/wordpress-installation.sh
     SHELL
     
